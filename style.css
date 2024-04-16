@@ -3,8 +3,11 @@ body {
 }
 
 header {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f8d7e9;
+  padding: 2rem;
 }
 
 main {
@@ -13,16 +16,14 @@ main {
   background-color: hotpink;
 }
 
-input {
-  margin: 2rem;
+input + input {
+  margin-left: 1rem;
 }
 
 .hexadezimal-value {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   font-size: xx-large;
   margin: 0;
+  margin-inline-start: 30%;
 }
 
 .red {
@@ -35,4 +36,13 @@ input {
 
 .blue {
   accent-color: blue;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 7px;
+  font-size: large;
 }
